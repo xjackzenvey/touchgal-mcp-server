@@ -1,0 +1,19 @@
+[project]
+name = "touchgal-mcp-server"
+version = "0.1.0"
+description = "TouchGal 的（非官方）MCP 服务器。"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp>=3.1.1",
+    "requests>=2.33.0",
+]
+
+
+[project.scripts]
+touchgal-mcp-server = "touchgal_mcp_server:main"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
